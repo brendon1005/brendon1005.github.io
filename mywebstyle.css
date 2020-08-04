@@ -1,0 +1,47 @@
+h1{color:white;
+    padding: 12px;
+    position: relative;
+    left: 480px;
+}
+li,p {line-height: 140%;}
+p {font-size: 100%;
+             color: white;
+          }
+li{font-size: 120%;
+             color: white;
+          }
+#webbackground{background-image: url("space.JPG");
+              background-repeat: repeat;
+              background-size: 1400px 790px;
+          }
+h2{text-decoration: underline;
+             color: white;
+             font-weight: bold;
+          }
+a{color: red;
+  text-decoration: underline;
+          }
+#quiz{color: white;
+      font-size: 120%;
+      }
+table{border: solid 2px white;
+    border-collapse: collapse;
+    font-size: 120%;
+    color: white;
+}
+
+td{
+    border: solid 3px white;
+    height: 140%;
+    width: 200px;
+    text-align: center;
+}
+#hobbytable{
+    position: relative;
+    left:100px;
+}
+#iconphoto{
+    position: relative;
+    left: 80px;
+}
+#myrecommendbook{display: inline;}
