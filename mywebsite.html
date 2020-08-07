@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="zh">
+    <head>
+        <title>man man website</title>
+        <link rel="icon" href="manicon.jpg" type="image/x-icon" /><link rel="icon" type="image/jpg" href="manicon.jpg" />
+        <meta charset="utf-8" />
+        <meta name="author" content="Chan Hing Man, Brendon">
+        <meta name="generator" content="XCode">
+        <meta name="viewport" content="width=100%;, initial-scale=2.0">
+        <meta name = "keywords" content="Chan Hing Man, Brendon, man man, html, girlfriend, ust, web, three-body, wisely series, Ni Kuang, XCode">
+        <meta name = "description" content="This is my first website. It show man man information">
+        <base target="_blank">
+        <link rel= "stylesheet" type = "text/css" href="mywebstyle.css">
+            
+        <style type="text/css">
+            #navigation {list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333333;}
+            #navigation li {float: left;width:200px;}
+            #navigation li a {display: block;
+              color: white;
+              text-align: center;
+              padding: 16px;
+              text-decoration: none;}
+            #navigation li a:hover {background-color: #111111;font-size:150%;}
+        
+            #title {text-decoration:underline;font-size:300%;color:white;text-align: center;}
+            #threebodyquote {color:white;font-size:200%;font-style:italic;text-align: center;}
+            
+            #bookandresource{position: relative;left:64px;}
+            #commentform {color:white;}
+            #line {position:relative;left:80px;}
+            #quiz,#google {position:relative;left:100px;}
+            
+            th {border: solid 3px white;height: 140%;width: 200px;text-align: center;}
+            figcatpion {color:white;}
+            address {position:relative;left:100px;}
+            section {position:relative;left:67px;color:white;}
+            header {color:white;}
+            footer {color:white;}
+            aside {width: 30%;padding-left: 15px;margin-left: 15px;float: right;font-style: italic;background-color: rgb(50,50,50);}
+        </style>
+        
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+        
+    </head>
+    
+    <body onload = "displaydate()" id="webbackground">
+        <header>
+            <nav id="navigation">
+                <li><a href="#basicinfo">Basic Information</a></li>
+                <li><a href="#academic">Academic and Skills</a></li>
+                <li><a href="#work">Work and Memory</a></li>
+                <li><a href="#bookandresource">Book and RSS</a></li>
+                <li><a href="#hobbytable">Hobby</a></li>
+                <li><a href="#quiz">Quiz About Me</a></li>
+                <li><a href="#contactinfo">Contact Information</a></li>
+            </nav>
+            
+            <div style="position: relative;left: 10px;">
+                <script>
+                    function displaydate(){
+                        document.getElementById("date").innerHTML = "Website load at: " + Date()
+                    }
+                </script>
+                <p id="date">Display Webload Time and Date</p>
+            </div>
+            
+            <div style="float:left;">
+                <button type="button" onclick="changetoanotherquote1()" style="position: relative;left: 10px;">Click here to change to quote 1</button>
+                <script>
+                function changetoanotherquote1() {
+                  document.getElementById("threebodyquote").innerHTML = "宇宙就是一座黑暗森林，每個文明都是<br>帶槍的獵人，像幽靈般潛行於林間。輕<br>輕撥開路的樹枝，竭力不讓腳步發出一<br>邊兒聲音，連呼吸都小心翼翼。他必須<br>小心，因為林中到處都有與他一樣潛行<br>的獵人。如果他發現了別的生命，能做<br>的只有一件事:開槍消滅之，他人就是地<br>獄，就是永恆的威脅。任何暴露自己的<br>生命都講很快被消滅，這就是宇宙文明<br>的圖景。這就是對費米悖論的解釋，黑<br>暗森林法則"}
+                </script>
+            </div>
+            
+            <div style="float:left;">
+                <button type="button" onclick="changetoanotherquote2()" style="position: relative;left: 10px;">Click here to change to quote 2</button>
+                <script>
+                function changetoanotherquote2() {
+                  document.getElementById("threebodyquote").innerHTML = "不要回答！不要回答！不要回答！"}
+                </script>
+            </div>
+            
+            <div style="float:left;">
+                <button type="button" onclick="changetoanotherquote3()" style="position: relative;left: 10px;">Click here to change to quote 3</button>
+                <script>
+                function changetoanotherquote3() {
+                  document.getElementById("threebodyquote").innerHTML = "失去人性，失去很多。失去獸性，失去<br>一切。"}
+                </script>
+            </div>
+            
+            <div style="float:left;">
+                <button type="button" onclick="changetoanotherquote4()" style="position: relative;left: 10px;">Click here to change to quote 4</button>
+                <script>
+                function changetoanotherquote4() {
+                    document.getElementById("threebodyquote").innerHTML = "一切的一切都導向這樣一個結果：物理<br>學從來就沒有存在過，將來也不會存在<br>。我知道自己這樣做是不負責任的，但<br>別無選擇。"}
+                </script>
+            </div>
+            
+            <div style="float:left;">
+                <button type="button" onclick="changetoanotherquote5()" style="position: relative;left: 10px;">Click here to change to quote 5</button>
+                <script>
+                function changetoanotherquote5() {
+                  document.getElementById("threebodyquote").innerHTML = "消滅人類暴政，世界屬於三體！"}
+                </script>
+            </div>
+            
+            <div style="float:left;">
+                <button type="button" onclick="changetoanotherquote6()" style="position: relative;left: 10px;">Click here to change to quote 6</button>
+                <script>
+                function changetoanotherquote6() {
+                  document.getElementById("threebodyquote").innerHTML = "看看吧，這就是蟲子，它們的技術與我<br>們的差距，遠大於我們與三體文明的差<br>距。人類竭盡全力消滅它們，用盡各種<br>毒劑，用飛機噴灑，引進和培養牠們的<br>天敵，搜尋並毀掉它們的卵，用基因改<br>造使它們絕育；用火燒它們，用水淹它<br>們，每個家庭都有對付它們的滅害靈，<br>每個辦公桌下都有像蒼蠅拍這種擊殺牠<br>們的武器……這場漫長的戰爭伴隨著整<br>個人類文明，現在仍然勝負未定，蟲子<br>並沒有被滅絕，它們照樣傲行於天地之<br>間，它們的數量也並不比人類出現前少<br>。把人類看作蟲子的三體人似乎忘記了<br>一個事實；蟲子從來就沒有被真正戰勝<br>過。"}
+                </script>
+            </div>
+            
+            <div style="float:left;">
+                <button type="button" onclick="changetoanotherquote7()" style="position: relative;left: 10px;">Click here to change to quote 7</button>
+                <script>
+                function changetoanotherquote7() {
+                    document.getElementById("threebodyquote").innerHTML = "「你父親在回憶這件事後，對我發出這<br>樣的感嘆：在中國，任何超脫飛揚的思<br>想都會砰然墜地的，現實的引力太沉重<br>了。」"}
+                </script>
+            </div>
+            
+            <p id="title"><i>Welcome to Brendon Homepage</i><p>
+            <p id="threebodyquote">給歲月以文明，而不是給文明以歲月。<p>
+            
+            <hr><br>
+            
+            <button type="button" onclick="tenyearsago()" style="position:relative;left: 100px;">Click to see me 10 years ago</button>
+            
+            <br><br>
+            
+            <div id="iconphoto">
+                <script>
+                   function tenyearsago() {
+                     document.getElementById('manimage').src = "mantenago.jpg";
+                     document.getElementById('mancaption').innerHTML = "⇧⇧⇧ This is me in English classes of Custody Center 10 years ago ⇧⇧⇧";}
+                </script>
+                <figure >
+                    <img src="man man.jpg" id = "manimage" style="height:500px;width:500px;" usemap="#workmap" alt="My Image">
+                    <map name="workmap">
+                        <area shape="circle" coords="227,260,43" alt="Nose" onclick="nose()">
+                        <area shape="circle" coords="280,225,22" alt="Left Eye" onclick="lefteye()">
+                        <area shape="circle" coords="173,215,22" alt="Right Eye" onclick="righteye()">
+                        <area shape="rect" coords="185,311,255,351" alt="Mouth" onclick="mouth()">
+                    </map><br>
+                    <aside>
+                        <p>The Custody Center is a place where I go during summer and easter holiday to learn and meet friend.</p>
+                    </aside>
+                    <figcatpion id="mancaption">⇧⇧⇧ This is me in PWH hospital, 15-1-2020, <strong>try to click my right eye, left eye, <br> nose and mouth to see description</strong> ⇧⇧⇧<figcatpion>
+                </figure>
+                <script>
+                    function righteye() {
+                      alert("My right eye is better than left eye");}
+                    function lefteye() {
+                      alert("My right eye is better than left eye");}
+                    function mouth() {
+                      alert("my mouth is small");}
+                    function nose() {
+                      alert("I am not good at smell");}
+                </script>
+            </div>
+        </header>
+        <section>
+            <ul>
+                <div id="basicinfo">
+                    <h2>Basic Information</h2>
+                    <li>Name: Chan Hing Man 陳慶汶, Brendon</li>
+                    <li>Gender: M</li>
+                    <li>Birthday: 5-10-1997</li>
+                    <li>Height: 162cm (166cm after wear shoes)</li>
+                    <li>Weight: 45kg</li>
+                    <li>Nationality: HKSAR</li>
+                    <li>Language: Cantonese, English, Mandarin</li>
+                </div>
+                <br>
+                <div id= id="status">
+                    <h2>Status</h2>
+                    <li>Occupational Status: HKUST final year student</li>
+                    <li>Emotional Status: single, live with mum and dad, no siblings</li>
+                </div>
+                <br>
+                <div id="academic">
+                    <h2>Academic Background and Skills</h2>
+                    <li>Major and Minor: Physics (theoretical), Biotechnology (second major), Computer Science - Artifical Intelligence(minor)</li>
+                    <li>Other Academic Background: Mirco and Macro Economy (self-study), Mathematics (self-study): Topology, Number Theory, Graph Theory, Fourier Series, Numerical Analysis, Complex Variable</li>
+                    <li>Programming Skills: Python (main), C++ (main), C (main), SQL Database Management, Microsoft Office VBA, IOS App Development with Swift and XCode, HTML-CSS-PHP-JavaScript Web Design, R Statistical Analysiss, Other Language: Ruby, Go, C#, perl </li>
+                </div>
+                <br>
+                <div id="work">
+                <h2>Working Experience and Life Memory</h2>
+                    <li>Working Experience: <a href="http://hmo.gd.gov.cn/zdxm/content/post_44011.html" target="_blank">Zhuhai Internship (2017 summer)</a>, Private Tutor</li>
+                    <li>Life Memorable Experience: Bi-lateral femoral leg lengthening surgery 雙腿股骨增高手術 and grow 9.5cm taller (1.5 SD) --- from 28-9-2018 to 24-4-2020</li>
+                </div>
+            </ul>
+        </section>
+            <p id="line">* - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - *</p>
+            
+            <div id="bookandresource">
+                <ul>
+                    <h2>Book and Learning Resources</h2>
+                    <li>Favorite Book: <a href="https://novel101.com/novels/40c6da40-1522-4fdb-855e-c13042d269bb">Three-Body</a>, <a href="https://www.bookscool.com/nk">Wisely Series</a>, <a href="https://www.bookscool.com/nk">Legendary Ranger</a>, <a href="https://www.books.com.tw/products/0010740818">Homo Deus: The Brief History of Tomorrow</a>, <a href="http://www.eslite.com/product.aspx?pgid=1001122732649867">A Brief History of Humankind</a>, <a href="https://www.propmgmtforms.com/forms/ebooks/trump-the-art-of-the-deal.pdf">The Art of Deal</a><br><br></li>
+                    
+                    <iframe src="myrecommendbook.html" style="height:200px;width:1000px;" title="Iframe book list"></iframe><br>
+
+                    <a href="myrecommendbook.html" style="font-size:140%;">or <strong>CLICK</strong> here to see of my complete recommend book list</a>
+                    
+                    <li>Favorite Episodes:<a href="https://www.imdb.com/title/tt5691552/">Orville</a></li>
+                </ul>
+            </div>
+            
+            <p id="line">* - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - *</p>
+        
+            <div id="hobbytable">
+                <h2>Hobby</h2>
+                <p>Click to see Gallery or External Link:</p>
+                <table>
+                    <tr><td>Study</td><td>Read Science Fiction</td><td>Programming</td><td>Make Website</td><td><a href="game.html">Game Programming</a></td></tr>
+                    <tr><td>Video Game</td><td>Cooking</td><td><a href="modelhouse.html">Make Model House</a></td><td>Lego</td><td>Hiking</td></tr>
+                    <tr><td>Stargazing</td><td>Badminton</td><td>Billards</td><td>Boradgame</td><td>Writing</td></tr>
+                    <tr><td>Travel</td><td><a href="coincollecting.html">Coin Collecting</a></td><td>Stamp Collecting</td></tr>
+                </table>
+            </div>
+            <br>
+            
+            <p id="line">* - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - *</p>
+            
+            <script>
+                function subject() {
+                    var major = prompt("Which of the following subject IS NOT my major or minor at HKUST? (type in the answer in exactly case sensitivity as below)\n Physics, Economy, Biotechnology, Computer Science")
+                    if (major == "Economy") {
+                        alert ("You are right! Quiz Finished, You already understand me very well!!!");
+                    } else {
+                        alert ("Let try again");
+                        subject();}}
+                function school() {
+                    var university = prompt("Which University was I graduated from? (in capital abbrevation)")
+                    if (university == "HKUST") {
+                        alert ("You are right!");
+                        subject();
+                    } else {
+                        alert ("Let try again");
+                        school();}}
+                function tall() {
+                    var height = prompt("How tall am I in cm? (Don't need to include unit cm)")
+                    if (height == 162) {
+                        alert ("You are right! Excellent");
+                        school();
+                    } else {
+                        alert ("Let try again");
+                        tall();}}
+                function quiz() {
+                    var year = prompt("Which year I was born in 4 digit numbers?")
+                    if (year ==  1997) {
+                        alert ("You are right! Smart");
+                        tall();
+                    } else {
+                        alert ("Let try again");
+                        quiz();}}
+            </script>
+            
+            <div id="quiz">
+                <p>Let take a Quiz about me. Click the below button:</p>
+                <form>
+                    <input type = "button" onclick="quiz()" value="Let take a quiz about me ^.^">
+                </form>
+            </div>
+            
+            <p id="line">* - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - *</p>
+            
+            <br>
+         <footer>
+            <address id="contactinfo">
+                <iframe src="home.html" height="400px" width="400px" title="Iframe Example"></iframe><br>
+                
+                <p>
+                Address: HA TSUEN, YUEN LONG, N.T., HK<br>
+                Contact Information: 852-56936621 (mobile main)/ 62396483 (home)<br>
+                E-mail: toericchan81@yahoo.com.hk (main)/ hmchanam@connect.ust.hk (school)
+                </p>
+                <script type="text/javascript">
+                    function uppercase() {
+                        var username = document.getElementById("name");
+                        username.value = username.value.toUpperCase();
+                    }
+                    function commentform(){
+                    var data="Username:<br><input type='text' id='name' onchange='uppercase()'><br>Comment:<br><textarea rows='6' cols='45'></textarea><br><input type='submit' value='Submit'>";
+                        document.getElementById('area').innerHTML=data;}
+                </script>
+                <form name="form1" id="commentform">
+                    <input type="button" value="Left a comment to Brendon" onclick="commentform()">
+                <div id="area"></div>
+                </form>
+            </address><br>
+            
+            <p id="line">* - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - *</p><br>
+            
+            <button style="position:relative;left:100px;"><a href="#navigation" style="font-size:24px;color:black;text-decoration:none;">Back To The Top</a></button><br><br>
+            
+            <a href="http://www.google.com" id="google">Click here to go to Google</a>
+            <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;color:black;">This web page is a part of a demonstration of Brendon web design made by Chan Hing Man. RSS and Design are share to everyone.</div>
+        </footer>
+    </body>
+</html>
