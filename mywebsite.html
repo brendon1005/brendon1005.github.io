@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+        <title>man man website</title>
+        <link rel="icon" href="manicon.jpg" type="image/x-icon" /><link rel="icon" type="image/jpg" href="manicon.jpg" />
+        <meta name="author" content="Chan Hing Man, Brendon">
+        <meta name="generator" content="XCode">
+        <meta name="viewport" content="width=device-width, initial-scale=0.25">
+        <meta name = "keywords" content="Chan Hing Man, Brendon, man man, html, girlfriend, ust, web, three-body, wisely series, Ni Kuang, XCode">
+        <meta name = "description" content="This is my first website. It show man man information">
+        <link rel= "stylesheet" type = "text/css" href="mywebstyle.css">
+            
+        <style type="text/css">
+            #navigation {
+                list-style-type: none;
+                margin: 0; padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+            #navigation li {float: left; width:155px;}
+            #navigation li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 16px;
+              text-decoration: none;
+            }
+            #navigation li a:hover {background-color: #111111;font-size:150%;}
+        
+            #title {
+                text-decoration:underline;
+                font-size:300%;
+                color:white;
+                text-align: center;
+            }
+            #threebodyquote {
+                color:white;
+                font-size:200%;
+                font-style:italic;
+                text-align: center;
+            }
+            #bookandresource{position: relative;left:64px;}
+            #computerlearningcentre{position: relative;left:100px;}
+            #subscript{position: relative;left:100px;}
+            #commentform {color:white;}
+            #line {position:relative;left:105px;}
+            #quiz,#google {position:relative;left:100px;}
+            
+            th {
+                border: solid 3px black;
+                height: 140%;
+                width: 200px;
+                text-align: center;
+            }
+            figcatpion {color:white;}
+            address {position:relative;left:100px;}
+            section {
+                position:relative;
+                left:67px;
+                color:white;
+            }
+            header {color:white;}
+            footer {color:white;}
+            aside {
+                width: 30%;
+                padding-left: 15px;
+                margin-left: 15px;
+                float: right;
+                font-style: italic;
+                background-color: rgb(50,50,50);
+            }
+        </style>
+        
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+        
+    </head>
+    
+    <body onload = "displaydate()" id="webbackground">
+        <header>
+            <nav id="navigation">
+                <li><a href="#basicinfo">Basic Information</a></li>
+                <li><a href="#academic">Academic and Skills</a></li>
+                <li><a href="#work">Work and Memory</a></li>
+                <li><a href="#bookandresource">Book and RSS</a></li>
+                <li><a href="#hobbytable">Hobby</a></li>
+                <li><a href="#computerlearningcentre">Learn Coding Here</a></li>
+                <li><a href="#quiz">Quiz About Me</a></li>
+                <li><a href="#subscript">Subscription</a></li>
+                <li><a href="#contactinfo">Contact Info & Comment</a></li>
+            </nav>
+            
+            <div style="position: relative;left: 10px;">
+                <script>
+                    function displaydate(){
+                        document.getElementById("date").innerHTML = "&#9203;" +"Website load at: " + Date()
+                    }
+                </script>
+                <p id="date">Display Webload Time and Date</p>
+            </div>
+            
+            <div style="float:left;">
+               <button type="button" onclick="backtomainquote()" style="position: relative;left: 10px;">&#128073; Back to main quote</button>
+               <script>
+               function backtomainquote() {
+                 document.getElementById("threebodyquote").innerHTML = "給歲月以文明，而不是給文明以歲月。"}
+               </script>
+            </div>
+            
+            <div style="float:left;">
+                <button type="button" onclick="changetoanotherquote1()" style="position: relative;left: 10px;">&#128073; Click to change to quote 1</button>
+                <script>
+                function changetoanotherquote1() {
+                  document.getElementById("threebodyquote").innerHTML = "💬 宇宙就是一座黑暗森林，每個文明都是<br>帶槍的獵人，像幽靈般潛行於林間。輕<br>輕撥開路的樹枝，竭力不讓腳步發出一<br>邊兒聲音，連呼吸都小心翼翼。他必須<br>小心，因為林中到處都有與他一樣潛行<br>的獵人。如果他發現了別的生命，能做<br>的只有一件事:開槍消滅之，他人就是地<br>獄，就是永恆的威脅。任何暴露自己的<br>生命都講很快被消滅，這就是宇宙文明<br>的圖景。這就是對費米悖論的解釋，黑<br>暗森林法則。"}
+                </script>
+            </div>
+            
+            <div style="float:left;">
+                <button type="button" onclick="changetoanotherquote2()" style="position: relative;left: 10px;">&#128073; Click to change to quote 2</button>
+                <script>
+                function changetoanotherquote2() {
+                  document.getElementById("threebodyquote").innerHTML = "💬 不要回答！不要回答！不要回答！"}
+                </script>
+            </div>
+            
+            <div style="float:left;">
+                <button type="button" onclick="changetoanotherquote3()" style="position: relative;left: 10px;">&#128073; Click to change to quote 3</button>
+                <script>
+                function changetoanotherquote3() {
+                  document.getElementById("threebodyquote").innerHTML = "💬 失去人性，失去很多。失去獸性，失去<br>一切。"}
+                </script>
+            </div>
+            
+            <div style="float:left;">
+                <button type="button" onclick="changetoanotherquote4()" style="position: relative;left: 10px;">&#128073; Click to change to quote 4</button>
+                <script>
+                function changetoanotherquote4() {
+                    document.getElementById("threebodyquote").innerHTML = "💬 一切的一切都導向這樣一個結果：物理<br>學從來就沒有存在過，將來也不會存在<br>。我知道自己這樣做是不負責任的，但<br>別無選擇。"}
+                </script>
+            </div>
+            
+            <div style="float:left;">
+                <button type="button" onclick="changetoanotherquote5()" style="position: relative;left: 10px;">&#128073; Click to change to quote 5</button>
+                <script>
+                function changetoanotherquote5() {
+                  document.getElementById("threebodyquote").innerHTML = "💬 消滅人類暴政，世界屬於三體！"}
+                </script>
+            </div>
+            
+            <div style="float:left;">
+                <button type="button" onclick="changetoanotherquote6()" style="position: relative;left: 10px;">&#128073; Click to change to quote 6</button>
+                <script>
+                function changetoanotherquote6() {
+                  document.getElementById("threebodyquote").innerHTML = "💬 看看吧，這就是蟲子，它們的技術與我<br>們的差距，遠大於我們與三體文明的差<br>距。人類竭盡全力消滅它們，用盡各種<br>毒劑，用飛機噴灑，引進和培養牠們的<br>天敵，搜尋並毀掉它們的卵，用基因改<br>造使它們絕育；用火燒它們，用水淹它<br>們，每個家庭都有對付它們的滅害靈，<br>每個辦公桌下都有像蒼蠅拍這種擊殺牠<br>們的武器……這場漫長的戰爭伴隨著整<br>個人類文明，現在仍然勝負未定，蟲子<br>並沒有被滅絕，它們照樣傲行於天地之<br>間，它們的數量也並不比人類出現前少<br>。把人類看作蟲子的三體人似乎忘記了<br>一個事實；蟲子從來就沒有被真正戰勝<br>過。"}
+                </script>
+            </div>
+            
+            <div style="float:left;">
+                <button type="button" onclick="changetoanotherquote7()" style="position: relative;left: 10px;">&#128073; Click to change to quote 7</button>
+                <script>
+                function changetoanotherquote7() {
+                    document.getElementById("threebodyquote").innerHTML = "💬「你父親在回憶這件事後，對我發出這<br>樣的感嘆：在中國，任何超脫飛揚的思<br>想都會砰然墜地的，現實的引力太沉重<br>了。」"}
+                </script>
+            </div>
+            
+            <p id="title"><i>&#128079;Welcome to Brendon Homepage&#128079;</i><p>
+            <p id="threebodyquote">給歲月以文明，而不是給文明以歲月。<p><br>
+            
+            <p> &#127761; &#127762; &#127763; &#127764; &#127765; &#127766; &#127767; &#127768; &#127761; &#127762; &#127763; &#127764; &#127765; &#127766; &#127767; &#127768; &#127761; &#127762; &#127763; &#127764; &#127765; &#127766; &#127767; &#127768; &#127761; &#127762; &#127763; &#127764; &#127765; &#127766; &#127767; &#127768; &#127761; &#127762; &#127763; &#127764; &#127765; &#127766; &#127767; &#127768; &#127761; &#127762; &#127763; &#127764; &#127765; &#127766; &#127767; &#127768; &#127761; &#127762; &#127763; &#127764; &#127765; &#127766; &#127767; &#127768; </p><hr>
+            
+            <br>
+            
+            <button type="button" onclick="tenyearsago()" style="position:relative;left: 100px;">&#128073; Click to see me 10 years ago</button>
+            <button type="button" onclick="sperm()" style="position:relative;left: 100px;">&#128073; Click to see me 23 years ago</button>
+            <button type="button" onclick="now()" style="position:relative;left: 100px;">&#128073; Back to now</button>
+            
+            <br><br>
+            
+            <div id="iconphoto">
+                <script>
+                   function tenyearsago() {
+                     document.getElementById('manimage').src = "mantenago.jpg";
+                     document.getElementById('mancaption').innerHTML = "&#9195; This is me in English classes of Custody Center 10 years ago &#9195;";}
+                </script>
+                <script>
+                   function sperm() {
+                     document.getElementById('manimage').src = "sperm.jpg";
+                     document.getElementById('mancaption').innerHTML = "&#9195; Sperm &#9195;"}
+                </script>
+                <script>
+                   function now() {
+                     document.getElementById('manimage').src = "man man.jpg";
+                     document.getElementById('mancaption').innerHTML = "&#9195; This is me in PWH hospital🏥, 15-1-2020, <strong>try to click my right eye👁️, left eye, 👃nose and 👄mouth to see description</strong> &#9195;"}
+                </script>
+                <figure >
+                    <img src="man man.jpg" id = "manimage" style="height:500px;width:500px;" usemap="#workmap" alt="My Image">
+                    <map name="workmap">
+                        <area shape="circle" coords="227,260,43" alt="Nose" onclick="nose()">
+                        <area shape="circle" coords="280,225,22" alt="Left Eye" onclick="lefteye()">
+                        <area shape="circle" coords="173,215,22" alt="Right Eye" onclick="righteye()">
+                        <area shape="rect" coords="185,311,255,351" alt="Mouth" onclick="mouth()">
+                    </map><br>
+                    <aside>
+                        <p>&#128313; The Custody Center is a place where I go during summer and easter holiday to learn and meet friend.</p>
+                    </aside>
+                    <figcatpion id="mancaption">&#9195; This is me in PWH hospital🏥, 15-1-2020, <strong>try to click my right eye👁️, left eye, 👃nose and 👄mouth to see description</strong> &#9195;<figcatpion>
+                </figure>
+                <script>
+                    function righteye() {
+                      alert("My right eye is better than left eye");}
+                    function lefteye() {
+                      alert("My right eye is better than left eye");}
+                    function mouth() {
+                      alert("my mouth is small");}
+                    function nose() {
+                      alert("I am not good at smell");}
+                </script>
+            </div>
+        </header>
+        <section>
+            <ul>
+                <div id="basicinfo">
+                    <h2>ℹ️ Basic Information</h2>
+                    <li>Name 🙂: Chan Hing Man 陳慶汶, Brendon</li>
+                    <li>Gender 🧑‍🤝‍🧑: M</li>
+                    <li>Birthday 🎂: 5-10-1997 ♎</li>
+                    <li>Height &#128207; : 162cm (166cm after wear shoes)</li>
+                    <li>Weight &#128219; : 45kg</li>
+                    <li>Nationality 🇺🇳: HKSAR🇭🇰</li>
+                    <li>Language 🌐: Cantonese, English, Mandarin</li>
+                </div>
+                <br>
+                <div id= id="status">
+                    <h2>📃 Status</h2>
+                    <li>Occupational Status: HKUST final year student</li>
+                    <li>Emotional Status: single, live with mum and dad, no siblings</li>
+                    <aside>
+                        <p>&#128313; A village house.</p>
+                    </aside><br>
+                </div>
+                <div id="academic">
+                    <h2>📚 Academic Background and 🔧 Skills</h2>
+                    <li>Major and Minor: Physics (theoretical), Biotechnology (second major), Computer Science - Artifical Intelligence(minor)</li>
+                    <aside>
+                        <p>&#128313; My Biological performance is the best.</p>
+                    </aside><br>
+                    <li>Other Academic Background: Mirco and Macro Economy (self-study), Mathematics (self-study): Topology, Number Theory, Graph Theory, Fourier Series, Numerical Analysis, Complex Variable</li><br>
+                    <li>Programming Skills: Python (main), C++ (main), C (main), SQL Database Management, Microsoft Office VBA, IOS App Development with Swift and<br> XCode, HTML-CSS-PHP-JavaScript Web Design, R Statistical Analysiss, Other Language: Ruby, Go, C#, perl </li>
+                </div>
+                <br>
+                <div id="work">
+                <h2>👔 Working Experience and 🧠 Life Memory</h2>
+                    <li>Working Experience: <a href="http://hmo.gd.gov.cn/zdxm/content/post_44011.html" target="_blank">Zhuhai Internship (2017 summer)</a>, Private Tutor</li>
+                    <aside>
+                        <p>&#128313; Work in a insurance company to design web page and electronic flyer.</p>
+                    </aside><br>
+                    <li>Life Memorable Experience: Bi-lateral femoral leg lengthening surgery 雙腿股骨增高手術 and grow 9.5cm taller (1.5 SD) --- from 28-9-2018 to 24-4-2020</li><br>
+                    <aside>
+                        <p>&#128313; From 152.5 cm to 162 cm tall.</p>
+                    </aside>
+                </div>
+            </ul>
+        </section>
+            <br><br>
+            <p id="line">&#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640;</p>
+            <div id="bookandresource">
+                <ul>
+                    <h2>📚 Book and Learning Resources</h2>
+                    <li>Favorite Book: <a href="https://novel101.com/novels/40c6da40-1522-4fdb-855e-c13042d269bb" target="_blank">Three-Body</a>, <a href="https://www.bookscool.com/nk" target="_blank">Wisely Series</a>, <a href="https://www.bookscool.com/nk" target="_blank">Legendary Ranger</a>, <a href="https://www.books.com.tw/products/0010740818" target="_blank">Homo Deus: The Brief History of Tomorrow</a>, <a href="http://www.eslite.com/product.aspx?pgid=1001122732649867" target="_blank">A Brief History of Humankind</a>, <a href="https://www.propmgmtforms.com/forms/ebooks/trump-the-art-of-the-deal.pdf" target="_blank">The Art of Deal</a><br><br></li>
+                    
+                    <iframe src="myrecommendbook.html" style="height:200px;width:1220px;" title="Iframe book list"></iframe><br>
+
+                    <a href="myrecommendbook.html" style="font-size:140%;" target="_blank">or <strong>CLICK</strong> here to see of my complete recommend book list</a>
+                    
+                    <br><br>
+                    
+                    <li>Favorite Episodes: <a href="https://www.imdb.com/title/tt5691552/" target="_blank">Orville</a></li>
+                </ul>
+            </div>
+            
+            <p id="line">&#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640;</p>
+        
+            <div id="hobbytable">
+                <h2>🏄🧗🤺🏄Hobby⚽🎹🚴🏊‍♂️</h2>
+                <p>Click to see Gallery or External Link:</p>
+                <table>
+                    <tr><td>&#128214;Study&#128214;</td><td>🤖Read Science Fiction🤖</td><td>⌨️Programming⌨️</td><td>📰Make Website📰<td><a href="game.html" target="_blank">💻Game Programming💻</a></td><td>&#128377;Video Game&#128377;</td></tr>
+                    <tr><td>🍳Cooking🍳</td><td><a href="modelhouse.html" target="_blank">🏘️Make Model House🏘️</a></td><td>🏗️Lego🏗️</td><td>🥾Hiking🥾</td><td>🔭Stargazing🔭</td><td>🏸Badminton🏸</td></tr>
+                    <tr><td>🎱Billards🎱</td><td>🎴Boradgame🎴</td><td>✍️Writing✍️</td><td>🧳Travel🧳</td><td><a href="coincollecting.html" target="_blank">💱Coin Collecting💱</a></td><td>💮Stamp Collecting💮</td></tr>
+                    <tr><td>♟️Chinese Chess♟️</td></tr>
+                </table>
+            </div>
+            <br>
+            
+            <p id="line">&#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640;</p>
+            
+            <div id="computerlearningcentre">
+                <h2>🖥️💽🖱️💾Computer Learning Centre🖲️⌨️💻🖨️</h2>
+                <ul>
+                    <li>Recommend Coding Website: <a href="https://www.codecademy.com/" target="_blank">Codecademy</a>, <a href="https://www.w3schools.com/" target="_blank">W3schools</a></li>
+                    <li>Recommend Computer Book Source: <a href="https://www.amazon.com/books-used-books-textbooks/b?ie=UTF8&node=283155" target="_blank">Amazon</a>, <a href="https://www.packtpub.com/">Packt</a></li>
+                    <li>Recommend Coding Forum: <a href="https://stackoverflow.com/">StackOverFlow</a>, <a href="https://www.codingame.com/forum">CodinGame</a>, <a href="https://codeforum.org/">CodeForum</a></li>
+                </ul>
+                <form action="/action_page.php" style="color:white;">
+                    <label for='gsearch' style="color:white;">Search in Google to recommend more useful site to me:</label>
+                    <input type='search' id='gsearch' name='gsearch'>
+                    <input type="submit" value="Submit Search">
+                </form>
+                <br><br>
+                <p>Upload some <span style="font-size:120%;font-weight:bold;">HTML SOURCE CODE</span> to Learn about Web Development (could focus on PHP-JavaScript-CSS): </p>
+                <form action="/action_page.php" style="color:white;">
+                  <label for="mywebfile">Select a file (remember to lowercase file name and have appropriate file extension):</label>
+                  <input type="file" id="mywebfile" name="mywebfile"><br><br>
+                  <input type="submit">
+                </form>
+                
+                <p>Upload some <span style="font-size:120%;font-weight:bold;">GAME PROGRAMMING SOURCE CODE</span> to Learn writing beautiful game: </p>
+                <form action="/action_page.php" style="color:white;">
+                  <label for="mygamefile">Select a file (remember to lowercase file name and have appropriate file extension):</label>
+                  <input type="file" id="mygamefile" name="mygamefile"><br><br>
+                  <input type="submit">
+                </form>
+                
+                <p>Upload some <span style="font-size:120%;font-weight:bold;">MOBILE APP SOURCE CODE</span>(iPad, iphone, ipod, AppleTV, Apple watch etc.) to Learn App Development: </p>
+                <form action="/action_page.php" style="color:white;">
+                  <label for="myappfile">Select a file (remember to lowercase file name and have appropriate file extension):</label>
+                  <input type="file" id="myappfile" name="myappfile"><br><br>
+                  <input type="submit">
+                </form>
+                
+                <p>Upload some <span style="font-size:120%;font-weight:bold;">DATABASE SOURCE CODE</span> to Learn Database Management: </p>
+                <form action="/action_page.php" style="color:white;">
+                  <label for="mydbfile">Select a file (remember to lowercase file name and have appropriate file extension):</label>
+                  <input type="file" id="mydbfile" name="mydbfile"><br><br>
+                  <input type="submit">
+                </form>
+            </div>
+            
+            <p id="line">&#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640;</p>
+            
+            <script>
+                function subject() {
+                    var major = prompt("Which of the following subject IS NOT my major or minor at HKUST? (type in the answer in exactly case sensitivity as below)\n Physics, Economy, Biotechnology, Computer Science")
+                    if (major == "Economy") {
+                        alert ("You are right! Quiz Finished, You already understand me very well!!!");
+                    } else {
+                        alert ("Let try again");
+                        subject();}}
+                function school() {
+                    var university = prompt("Which University was I graduated from? (in capital abbrevation)")
+                    if (university == "HKUST") {
+                        alert ("You are right!");
+                        subject();
+                    } else {
+                        alert ("Let try again");
+                        school();}}
+                function tall() {
+                    var height = prompt("How tall am I in cm? (Don't need to include unit cm)")
+                    if (height == 162) {
+                        alert ("You are right! Excellent");
+                        school();
+                    } else {
+                        alert ("Let try again");
+                        tall();}}
+                function quiz() {
+                    var year = prompt("Which year I was born in 4 digit numbers?")
+                    if (year ==  1997) {
+                        alert ("You are right! Smart");
+                        tall();
+                    } else {
+                        alert ("Let try again");
+                        quiz();}}
+            </script>
+            
+            <div id="quiz">
+                <h2>📜Quiz About Me</h2>
+                <p>Let take a Quiz about me. Click the below button:</p>
+                <form action="/action_page.php" style="color:white;">
+                    <input type = "button" onclick="quiz()" value="&#128073; Let take a quiz about me ^.^">
+                </form>
+            </div>
+            
+            <p id="line">&#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640;</p>
+            
+            <div id="subscript">
+                <script type="text/javascript">
+                    function passwordMatch() {
+                        var firstpassword=document.form3.userpassword.value;
+                        var secondpassword=document.form3.userpassword2.value;
+                        if (firstpassword==secondpassword){
+                            return true;
+                        } else {
+                            alert("The two passwords don't match!");
+                            return false;
+                        }
+                    }
+                    function subformValidation(){
+                        var subusername=document.form3.username.value;
+                        var subpassword=document.form3.userpassword.value;
+                        if (subusername==null||subusername==""){
+                            alert("You MUST enter your name!");
+                            return false;
+                        } else if(subpassword.length<8){
+                            alert("You MUST entr a password with 8 characters or above!");
+                            return false;
+                        }
+                    }
+                    function sfuppercase() {
+                        var sfirstname = document.getElementById("sfname");
+                        sfirstname.value = sfirstname.value.toUpperCase();
+                    }
+                    function sluppercase() {
+                        var slastname = document.getElementById("slname");
+                        slastname.value = slastname.value.toUpperCase();
+                    }
+                    function changecreditcard() {
+                        var cd = "<p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p><br><fieldset><legend>Verify Card Information: </legend><br><label for='sfname'>Cardholders First Name:</label><input type='text' id='sfname' name='sfname' value='your first name' onchange='sfuppercase()'><p style='display:inline;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><br><label for='slname'>Cardholders Last Name:</label><input type='text' id='slname' name='slname' value='your last name' onchange='sluppercase()'><br><label for='creditcard'>Enter your Credit Card Number:</label><input type='tel' id='creditcard' value='XXXX-XXXX-XXXX-XXXX' name='creditcard' pattern='[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}'><br><label for='csc'>CSC/CVC: </label><textarea id='csc' rows='1' cols='2' name='csc' value='XXX'></textarea><p style='display:inline;'>&nbsp;&nbsp;&nbsp;3 digits</p><br><label for='monthyear'>Expired date: </label><input type='month' id='monthyear' name='monthyear'><br><p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p><br>Country/Region: <br><textarea rows='1' cols='25'></textarea><br><br>Billing address line 1:<br><textarea rows='1' cols='100'></textarea><br><br>Billing address line 2:<br><textarea rows='1' cols='100'></textarea><br><br>Billing address line 3:<br><textarea rows='1' cols='100'></textarea><br><br><br>Postal Code:<br><textarea rows='1' cols='10'></textarea><br></fieldset>";
+                        document.getElementById("cdc").innerHTML=cd;}
+                    function subemailValidation() {
+                        var sev=document.form2.emailsub.value;
+                        var satposition=sev.indexOf("@");
+                        var sdotposition=sev.lastIndexOf(".");
+                        if (satposition<1||sdotposition<satposition+2||sdotposition+2>=sev.length){
+                            alert("Please provide a valid subscription e-mail address\n (@)position:"+satposition+"\n(.)position:"+sdotposition+"\n-1 mean hash sign(@) or dot(.) in wrong position compare to a valid e-mail address");
+                            return false;
+                        }
+                    }
+                    function actemailValidation() {
+                        var aev=document.form3.emailact.value;
+                        var aatposition=aev.indexOf("@");
+                        var adotposition=aev.lastIndexOf(".");
+                        if (aatposition<1||adotposition<aatposition+2||adotposition+2>=aev.length){
+                            alert("Please provide a valid activation e-mail address\n (@)position:"+aatposition+"\n(.)position:"+adotposition+"\n-1 mean hash sign(@) or dot(.) in wrong position compare to a valid e-mail address");
+                            return false;
+                        }
+                    }
+                    function opt1() {
+                        var memopt1="<br><br><input type='radio' id='sil1month' name='silmemdur' value='sil1month' onclick='sil1price()'><label for='sil1month'><strong style='color:red;'>1</strong> month <strong style='color:red;'>SILVER</strong> membership: 0.99 USD in total !</label><br><br><input type='radio' id='sil3month' name='silmemdur' value='sil3month' onclick='sil3price()'><label for='sil3month'><strong style='color:red;'>3</strong> month <strong style='color:red;'>SILVER</strong> membership: 2.79 USD in total ! !</label><br><br><input type='radio' id='sil6month' name='silmemdur' value='sil6month' onclick='sil6price()'><label for='sil6month'><strong style='color:red;'>6</strong> month <strong style='color:red;'>SILVER</strong> membership: 5.59 USD in total ! ! !</label><br><br>";
+                        document.getElementById("memsubopt").innerHTML=memopt1;
+                    }
+                    function opt2() {
+                        var memopt2="<br><br><input type='radio' id='gold1month' name='goldmemdur' value='gold1month' onclick='gold1price()'><label for='goldmonth'><strong style='color:red;'>1</strong> month <strong style='color:red;'>GOLD</strong> membership: 1.99 USD in total !</label><br><br><input type='radio' id='gold3month' name='goldmemdur' value='gold3month' onclick='gold3price()'><label for='gold3month'><strong style='color:red;'>3</strong> month <strong style='color:red;'>GOLD</strong> membership: 5.79 USD in total ! !</label><br><br><input type='radio' id='gold6month' name='goldmemdur' value='gold6month' onclick='gold6price()'><label for='gold6month'><strong style='color:red;'>6</strong> month <strong style='color:red;'>GOLD</strong> membership: 11.59 USD in total ! ! !</label><br><br>";
+                        document.getElementById("memsubopt").innerHTML=memopt2;
+                    }
+                    function opt3() {
+                        var memopt3="<br><br><input type='radio' id='dark1month' name='darkmemdur' value='dark1month' onclick='dark1price()'><label for='darkmonth'><strong style='color:red;'>1</strong> month <strong style='color:red;'>DARK MATTER</strong> membership: 2.99 USD in total !</label><br><br><input type='radio' id='dark3month' name='darkmemdur' value='dark3month' onclick='dark3price()'><label for='dark3month'><strong style='color:red;'>3</strong> month <strong style='color:red;'>DARK MATTER</strong> membership: 8.79 USD in total ! !</label><br><br><input type='radio' id='dark6month' name='darkmemdur' value='dark6month' onclick='dark6price()'><label for='dark6month'><strong style='color:red;'>6</strong> month <strong style='color:red;'>DARK MATTER</strong> membership: 17.59 USD in total ! ! ! (Strongly Recommend! ! !)</label><br><br>";
+                        document.getElementById("memsubopt").innerHTML=memopt3;
+                    }
+                    function sil1price() {
+                        document.getElementById("payamount").value="0.99";
+                        document.getElementById("payamountp").innerHTML="0.99";
+                    }
+                    function sil3price() {
+                        document.getElementById("payamount").value="2.79";
+                        document.getElementById("payamountp").innerHTML="2.79";
+                    }
+                    function sil6price() {
+                        document.getElementById("payamount").value="5.59";
+                        document.getElementById("payamountp").innerHTML="5.59";
+                    }
+                    function gold1price() {
+                        document.getElementById("payamount").value="1.99";
+                        document.getElementById("payamountp").innerHTML="1.99";
+                    }
+                    function gold3price() {
+                        document.getElementById("payamount").value="5.79";
+                        document.getElementById("payamountp").innerHTML="5.79";
+                    }
+                    function gold6price() {
+                        document.getElementById("payamount").value="11.59";
+                        document.getElementById("payamountp").innerHTML="11.59";
+                    }
+                    function dark1price() {
+                        document.getElementById("payamount").value="2.99";
+                        document.getElementById("payamountp").innerHTML="2.99";
+                    }
+                    function dark3price() {
+                        document.getElementById("payamount").value="8.79";
+                        document.getElementById("payamountp").innerHTML="8.79";
+                    }
+                    function dark6price() {
+                        document.getElementById("payamount").value="17.59";
+                        document.getElementById("payamountp").innerHTML="17.59";
+                    }
+                    function usdtohkd() {
+                        var usd=document.form3.amountpay.value;
+                        var hkd = usd * 7.8;
+                        var shkd = hkd.toString();
+                        document.getElementById("payamountp").innerHTML=shkd;
+                    }
+                    function hkdtousd() {
+                        var busd=document.form3.amountpay.value;
+                        var busd = busd.toString();
+                        document.getElementById("payamountp").innerHTML=busd;
+                    }
+                </script>
+                <h2>🔗Subscription</h2>
+                <form name="form2" action="/action_page.php" target="_blank" method="get" style="color:white;">
+                    <br>
+                    <fieldset>
+                        <legend style="font-size:140%;"><strong style="color:red;">FREE</strong> E-mail Subscription (send free e-mail about man mna website and coding everyweek for free ! ! !)</legend>
+                        <fieldset>
+                            <legend>Input your email (I suggest dont use your main email or school email to avoid mixing with important email) : </legend>
+                            <p>1. Enter your <strong style="color:red;">e-mail</strong> to subscript weekly man man page update :</p>
+                            <label for='emailsub'>Your E-mail: </label>
+                            <input type="text" id="emailsub" name="emailsub" value="XXXXX@XXX.XXX.XX" onchange="subemailValidation()"><br>
+                            <p>2. Check for sending email into your <strong style="color:red;">miscellaneous</strong> mail box : &nbsp;&nbsp;</p>
+                            <input type="checkbox" id="mismail" name="mismail" value="Send to your miscellaneous mail box">
+                            <label for="mismail">Send to your miscellaneous mail box</label>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Please indicate your e-mail content <strong style="color:red;">preference</strong> : </legend>
+                            <p>3. Which of the following information about my website you want to receive in the free email subscription? (You can choose more than one):</p>
+                            <input type="checkbox" id="personalupdate" name="emailcontent" value="My Personal Update">
+                            <label for="personalupdate">My Personal Update</label>
+                            <input type="checkbox" id="codelearn" name="emailcontent" value="Coding Learning Resource">
+                            <label for="codelearn">Coding Learning Resource</label>
+                            <input type="checkbox" id="booklist" name="emailcontent" value="My Recommend Book List Update">
+                            <label for="booklist">My Recommend Book List Update</label>
+                            <input type="checkbox" id="hobbyupdate" name="emailcontent" value="My Hobby Content Update">
+                            <label for="hobbyupdate">My Hobby Content Update</label>
+                            <input type="checkbox" id="galleryupdate" name="emailcontent" value="My Gallery Update">
+                            <label for="galleryupdate">My Gallery Update</label>
+                        </fieldset>
+                        <br><br>
+                        <input type="submit" value="Subit Free Subscription Information"><p style="display:inline;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <input type='reset' value='Reset All'>
+                    </fieldset>
+                    <br><br>
+                </form>
+                <form name="form3" action="/action_page.php" target="_blank" method="get" style="color:white;">
+                    <fieldset>
+                        <legend style="font-size:140%;"><strong style="color:red;">PAID</strong> Online Learning Course Subscription</legend>
+                        <fieldset>
+                            <legend>Create your Man Man Online Learning Course Platform Account:</legend>
+                            Username: <input type="text" name="username" onchange="subformValidation()"><br/>
+                            Password: &nbsp;<input type="password" name="userpassword" onchange="subformValidation()"><br/><br>
+                            Retype Password:<input type="password" name="userpassword2" onchange="passwordMatch()">
+                            <br><br>
+                            <label for='emailact'>E-mail for Account Activation: </label>
+                            <input type="text" id="emailact" name="emailact" value="XXXXX@XXX.XXX.XX" onchange="actemailValidation()"><br>
+                        </fieldset>
+                        <br>
+                        <fieldset style="color:white;">
+                            <legend>Subscription Plan</legend><br>
+                            <input type="radio" id="silver" name="subopt" value="opt1" onclick='opt1()'>
+                            <label for="silver"><strong style='color:red;'>SILVER</strong> Memberships: Full access to all Man Man gallery and some access to Online Learning Course !<label><br><br>
+                            <input type="radio" id="gold" name="subopt" value="opt2" onclick='opt2()'>
+                            <label for="gold"><strong style='color:red;'>GOLDEN</strong> Memberships: Full access to all Man Man Gallery and Online Learning Course (All Advanced Course! !)</label><br><br>
+                            <input type="radio" id="dark" name="subopt" value="opt3" onclick='opt3()'>
+                            <label for="wiretran"><strong style='color:red;'>DARK MATTER</strong> Memberships: Full access to all Man Man Gallery and Online Learning Course, and at least 3 paid Book Resource ! ! ! (Recommend)</label><br><br>
+                            <div id="memsubopt"></div><br>
+                            <p style='font-size:140%;'>Selected Payment Curreny: </p><input type='radio' id='usd' name='currency' value='USD' onclick='hkdtousd()'><label for='usd' style='color:red;'>USD</label><input type='radio' id='hkd' name='currency' value='HKD' onclick='usdtohkd()'><label for='hkd' style='color:red;'>HKD</label><br><br><p style='display:inline;color:white;font-size:140%;'>Payment Total in USD: </p><p style='display:inline;'>&nbsp;&nbsp;&nbsp;&nbsp;</p><input type="text" id='payamount' name="amountpay" value="XX.XX"></input><br><br>
+                            <p>Payment Total in your <strong style='color:red;display:inline;'>SELECTED </strong>Currency:</p>
+                            <p style='display:inline;padding: 5px 10px;color:black;width:auto;font-size:150%;font-weight:bold;border:2px solid red;text-decoration:underline;background-color:lightgrey;border-radius:3px;'>$</p><p style="display:inline;">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <p style='display:inline;padding: 5px 10px;color:black;width:auto;font-size:150%;font-weight:bold;border:2px solid red;text-decoration:underline;background-color:lightgrey;border-radius:3px;' id='payamountp'>XX.XX</p>
+                            <br><br>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Paying Options</legend>
+                                <input type="radio" id="creditcard" name="payingoption" value="CreditCard" onclick='changecreditcard()'>
+                                <label for="creditcard">CreditCard</label>
+                                <input type="radio" id="Paypal" name="payingoption" value="Paypal" onclick='changetopaypal'>
+                                <label for="Paypal">Paypal</label>
+                                <input type="radio" id="wiretran" name="payingoption" value="WireTransfer" onclick='changetowiretransfer'>
+                                <label for="wiretran">Wire Transfer</label>
+                                <br>
+                                <div id="cdc"></div>
+                                <br><br>
+                                <input type="checkbox" id="agreeterm" name="agreeterm" value="I have read and accept teh terms of use, rules and privacy policy">
+                                <label for="agreeterm">I have <strong style="color:red;">read</strong> and <strong style="color:red;">accept</strong> the terms of use, rules and privacy policy</label>
+                        </fieldset>
+                        <br><br>
+                        <input type="button" value="Submit Information and Pay Now"><p style="display:inline;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <input type='reset' value='Reset All'>
+                    </fieldset>
+                </form>
+            </div>
+            
+            <p id="line">&#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640;</p>
+            
+         <footer>
+            <address id="contactinfo">
+                <h2>📱Contact Information and 📝Comment</h2>
+                <br>
+                <iframe src="home.html" height="400px" width="400px" title="Iframe Example"></iframe><br>
+                
+                <p>
+                &#127968; Address: HA TSUEN, YUEN LONG, N.T., HK<br>
+                &#128241; Contact Information: 852-56936621 (mobile main)<br>
+                &#128231; E-mail: toericchan81@yahoo.com.hk (main)/ hmchanam@connect.ust.hk (school)
+                </p>
+                <script type="text/javascript">
+                    function nuppercase() {
+                        var nick = document.getElementById("nick");
+                        nick.value = nick.value.toUpperCase();
+                    }
+                    function fuppercase() {
+                        var firstname = document.getElementById("fname");
+                        firstname.value = firstname.value.toUpperCase();
+                    }
+                    function luppercase() {
+                        var lastname = document.getElementById("lname");
+                        lastname.value = lastname.value.toUpperCase();
+                    }
+                    function emailValidation() {
+                        var i=document.form1.email.value;
+                        var atposition=i.indexOf("@");
+                        var dotposition=i.lastIndexOf(".");
+                        if (atposition<1||dotposition<atposition+2||dotposition+2>=i.length){
+                            alert("Please provide a valid e-mail address\n (@)position:"+atposition+"\n(.)position:"+dotposition+"\n-1 mean hash sign(@) or dot(.) in wrong position compare to a valid e-mail address");
+                            return false;
+                        }
+                    }
+                    function phoneValidation() {
+                        var p=document.form1.phone.value;
+                        if (p.length<8){
+                            alert("Please provide a valid phone number, it must be at least 8 number long");
+                            return false;
+                        }
+                    }
+                    function opencommentform(){
+                        var opencommentcontent="<fieldset><legend>Personalia</legend><label for='nick'>Nick Name:</label><br><input type='text' id='nick' name='nick' value='your nick name' onchange='nuppercase()'><br><label for='fname'>First Name:</label><br><input type='text' id='fname' name='fname' value='your first name' onchange='fuppercase()'><br><label for='lname'>Last Name:</label><br><input type='text' id='lname' name='lname' value='your last name' onchange='luppercase()'><br><label for='birthday'>Your Birthday:<br></label><input type='date' id='birthday' name='birthday'><br><label for='email'>Your Personal E-mail: </label><br><input type='text' id='email' name='email' value='XXXXX@XXX.XXX.XX' onchange='emailValidation()'><br><label for='phone'>Your Phone Number (mobile is prefer): </label><br><input type='text' id='phone' name='phone' value='your phone number' onchange='phoneValidation()'></fieldset><br><br><fieldset><legend>Opinion</legend><p>1. Where do you get my website link? (Please check the boxes)</p><input type='checkbox' id='s1' name='s1' value='I send the link to you'><label for='s1'>I send the link to you</label><br><input type='checkbox' id='s2' name='s2' value='From Google'><label for='s2'>From Google</label><br><input type='checkbox' id='s3' name='s3' value='Friend Introduce'><label for='s3'>Your freind send it to you</label><br><input type='checkbox' id='s4' name='s4' value='Other'><label for='s4'>Other</label><br><br><br><label for='timevisit'>2. How many time have you been to my website?</label><br><input type='number' id='timevisit' name='timevisit' min='1' max='10000'><br><br><label for='favoritepart'>3. Which is your <strong>FAVORITE</strong> part of my Website? (You can select more than one)</label><select id='favoritepart' name='favoritepart' multiple><br><option value='basicinfo'>Basic Information</option><option value='aands'>Academic Background and Skills</option><option value='booklist'>Book List</option><option value='hobby'>Hobby</option><option value='photo'>Photo</option><option value='workexperience'>Working Experience</option><option value='mylengthening'>My Leg Lengthening Memory</option><option value='design'>Design</option><option value='other'>other</option></select><p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p><br><p>4. Which is your <strong>MOST DISLIKE</strong> part of my Website ?(You can only choose one answer)</p><input list='worstpart' name='worstpart'><datalist id='worstpart'><option value='Basic Information'><option value='Academic Background'><option value='Book List'><option value='Hobby'><option value='Photo'><option value='Working Experience'><option value='My Leg Lengthening Memory'><option value='Design'><option value='Other'></datalist><br><br><br>5. Which is your <strong>FAVORITE</strong> Science Fiction within my recommend book list (Only need to type the book name): <br><textarea rows='1' cols='100'></textarea><br><br><br>6. Which is your <strong>FAVORITE</strong> Textbook (cloud be in any discipline) within my recommend book list (Only need to type the book name): <br><textarea rows='1' cols='100'></textarea><br><br><p>7. How would you values this website for 100 scores in total? (5 marks bonus for my first trial, you can add more for me)</p>&nbsp;&nbsp;0<input type='range' id='a' name='a' value='50'>100 + <input type='number' id='b' name='b' value='5'>=<output name='x' for='a b'></output><br><br>Comment:<br><textarea rows='10' cols='100'></textarea><br></fieldset><br><input type='image' src='submitbutton.png' alt='Submit' width='92' height='50'><p style='display:inline;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><input type='reset' value='Reset All'>";
+                        document.getElementById('area').innerHTML=opencommentcontent;}
+                
+                    function closecommentform(){
+                        var closecommentcontent="";
+                        document.getElementById('area').innerHTML=closecommentcontent;}
+                </script>
+                <form name="form1" action="action_page.php" target="_blank" id="commentform" method="get" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                    <input type="button" value="&#128073; Left a comment to Brendon" onclick="opencommentform()">
+                    <input type="button" value="&#128073; Close the comment form" onclick="closecommentform()">
+                    <div id="area"></div>
+                </form>
+            </address><br>
+            
+            <p id="line">&#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640; &#128640;</p><br>
+            
+            <button type="button" style="position:relative;left:100px;"><a href="#navigation" style="font-size:24px;color:black;text-decoration:none;">&#128073; Back To The Top</a></button><br><br>
+            
+            <a href="http://www.google.com" id="google" target="_blank">&#128073; Click here to go to Google</a>
+            <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;color:black;">&copy; This web page is a part of a demonstration of Brendon Web Design made by Chan Hing Man. RSS & Design are share to everyone.</div>
+        </footer>
+    </body>
+</html>
